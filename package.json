@@ -10,7 +10,7 @@
     "url": "https://github.com/Xiongqi-XQ/vscode-javadoc.git"
   },
   "scripts": {
-    "start": "tsc -w -p ./",
+    "start": "tsc -w -p ./ --sourceMap",
     "vscode:prepublish": "rm -rf ./out/* && tsc"
   },
   "displayName": "VSCode Javadoc",
