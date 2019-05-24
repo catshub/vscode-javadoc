@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    // "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+    "outDir": "out",
+    "lib": ["es6"],
+    "rootDir": "src"
+  },
+  "include": ["src/"]
+}

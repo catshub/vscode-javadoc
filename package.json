@@ -1,0 +1,52 @@
+{
+  "name": "vscode-javadoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./out/extension.js",
+  "author": "xiongqi",
+  "license": "ISC",
+  "scripts": {
+    "start": "tsc -w -p ./"
+  },
+  "publisher": "xiongqi",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:typescript",
+    "onLanguage:javascript"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "VSCodeJavadoc",
+      "type": "object",
+      "properties": {
+        "vscode-javadoc.searchUrl": {
+          "type": "string",
+          "default": "aaaaa",
+          "description": "The api used to search javadoc"
+        },
+        "vscode-javadoc.docUrl": {
+          "type": "string",
+          "default": "",
+          "description": "The url used to show javadoc"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "open": "^6.3.0",
+    "vscode": "^1.1.34"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "@types/node-fetch": "^2.3.4",
+    "@types/vscode": "^1.32.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
