@@ -48,7 +48,7 @@
     }
   },
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "open": "^6.3.0"
   },
   "devDependencies": {
